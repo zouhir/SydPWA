@@ -1,0 +1,194 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding-top: 20px;
+  position: relative;
+  min-height: 100%; }
+
+.site {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  position: relative;
+  height: 100vh; }
+
+.nav-btm {
+  background: #F9FAFB;
+  padding: 10px 15px;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 55px;
+  color: #FF8162;
+  text-align: center;
+  line-height: 35px; }
+  .nav-btm .right {
+    width: 100px;
+    text-align: right;
+    position: absolute;
+    right: 15px; }
+  .nav-btm .left {
+    width: 100px;
+    position: absolute;
+    left: 15px;
+    text-align: left; }
+    .nav-btm .left a {
+      display: inline-block;
+      height: 35px;
+      line-height: 35px; }
+      .nav-btm .left a svg {
+        max-height: 24px;
+        vertical-align: middle;
+        display: inline-block; }
+
+.btn-green {
+  height: 35px;
+  line-height: 35px;
+  font-weight: 300;
+  color: #FFF;
+  background: #A5D64D;
+  font-size: 13px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 17px;
+  text-transform: uppercase;
+  padding: 0px 20px; }
+
+.hero {
+  width: 100%;
+  margin: 0 auto;
+  height: 340px;
+  position: relative;
+  background-color: #3F4250;
+  background-image: url("../public/images/sydney.svg");
+  background-position: center bottom; }
+  .hero .gradient {
+    background-image: linear-gradient(36deg, rgba(183, 113, 189, 0.8) 0%, #474B91 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    top: 0;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 20px; }
+    .hero .gradient .logo {
+      letter-spacing: 1px;
+      text-align: center;
+      transform: translatey(50%); }
+      .hero .gradient .logo svg {
+        display: inline-block;
+        max-width: 180px; }
+      .hero .gradient .logo p {
+        font-size: 14px;
+        font-weight: 100;
+        text-align: center; }
+
+.cards {
+  width: 100%;
+  background: #FAFBFC;
+  margin: 0 auto;
+  padding: 20px 0px; }
+  .cards .card {
+    padding: 0px 15px 30px;
+    position: relative;
+    margin-bottom: 30px; }
+    .cards .card .banner {
+      width: 100%;
+      height: 130px;
+      display: block;
+      position: relative; }
+      .cards .card .banner .tag {
+        position: absolute;
+        padding: 10px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        /* Shadow: */
+        background-image: linear-gradient(-180deg, transparent 0%, #000000 100%); }
+        .cards .card .banner .tag h5 {
+          color: #FF8162;
+          text-transform: uppercase;
+          font-weight: 400;
+          margin-bottom: 5px; }
+        .cards .card .banner .tag p {
+          font-weight: 100;
+          color: #FFF;
+          font-size: 12px; }
+        .cards .card .banner .tag i {
+          right: 15px;
+          width: 16px;
+          height: 16px;
+          position: absolute;
+          top: 50%;
+          margin-top: -2px;
+          opacity: 0.8; }
+          .cards .card .banner .tag i svg {
+            max-height: 16px; }
+        .cards .card .banner .tag.white h5, .cards .card .banner .tag.white p {
+          color: #FFF; }
+    .cards .card:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 30px;
+      left: 50%;
+      margin-left: -15px;
+      height: 2px;
+      bottom: 0;
+      background: #FF8162;
+      opacity: 0.8; }
+
+.sponsor {
+  /* Background: */
+  background-image: linear-gradient(-127deg, #FF8162 18%, #F8B642 100%) !important; }
+  .sponsor .tag {
+    background: none !important; }
+    .sponsor .tag h5, .sponsor .tag p {
+      color: #FFF !important; }

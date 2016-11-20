@@ -1,0 +1,23 @@
+{
+  "name": "sydpwa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "styles": "node-sass -w public/scss/main.scss -o dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zouhir/SydPWA.git"
+  },
+  "author": "Zouhir Chahoud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zouhir/SydPWA/issues"
+  },
+  "homepage": "https://github.com/zouhir/SydPWA#readme",
+  "devDependencies": {
+    "node-sass": "^3.10.1"
+  }
+}
